@@ -3,19 +3,39 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+
+    .arrow {
+        height: 40px;
+        position: absolute;
+        cursor: pointer;
+
+        &.left {
+           left: 100px;
+           
+        }
+
+        &.right {
+            right: 100px;
+            transform: rotate(180deg);
+           
+
+        }
+    }
 
     .slider {
         height: 350px;
         display: flex;
         position: absolute;
         left: 0;
-
+        transition: all 1s ease-out;
+    
         .container {
             width: 100vw;
             display: flex;
             align-items: center;
             justify-content: center;
-
+            
             .item {
                 width: 700px;
                 height: 100%;
@@ -28,7 +48,6 @@
                 .left {
                     flex: 4;
                     height: 80%;
-                    background-color: brown;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -44,7 +63,7 @@
                              width: 40px;
                              height: 40px;
                              border-radius: 50%;
-                             background-color: coral;
+                             background-color: rgb(235, 191, 224);
                              display: flex;
                              align-items: center;
                              justify-content: center;
@@ -53,6 +72,21 @@
                                  width: 25px;
                              }
                          }
+
+                         h2 {
+                             font-style: 20px;
+                         }
+
+                         p {
+                             font-size: 13px;
+                         }
+
+                         span {
+                            font-size: 12px;
+                            font-weight: 600;
+                            text-decoration: underline;
+                            cursor: pointer;
+                         }
                        
                     }
                 }
@@ -60,10 +94,15 @@
                 .right {
                     flex: 8;
                     height: 100%;
-                    background-color: rgb(255, 0, 191);
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    
+
+                    img {
+                        width: 400px;
+                        transform: rotate(-5deg);
+                    }
 
                 }
             }
