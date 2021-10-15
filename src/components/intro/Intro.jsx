@@ -19,7 +19,7 @@ export default function Intro() {
         <div className="intro" id="intro">
            <div className="left">
                 <div className="imgContainer">
-                      <img src="https://images.unsplash.com/photo-1588026193712-31163b26c043?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d29ya2luZyUyMHdvbWFufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt="" />
+                      <img src={ process.env.PUBLIC_URL + "/assets/image3.png" } alt="" />
                       
                    
                 </div>
@@ -32,7 +32,7 @@ export default function Intro() {
                    <h3>Web Developer<span ref={ textRef }> Front-End engineer</span></h3>
                </div>
                <a href="#portfolio">
-                   <img className="arrow" src="https://i0.wp.com/meritocracy.is/blog/wp-content/uploads/2019/01/grey-down-arrow-icon-png-1.png?fit=385%2C233&ssl=1" alt=""/>
+                   <img className="arrow" src={ process.env.PUBLIC_URL + "/assets/down_arrw.png" } alt=""/>
                </a>
            </div>
         </div>
