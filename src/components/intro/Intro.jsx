@@ -19,7 +19,7 @@ export default function Intro() {
         <div className="intro" id="intro">
            <div className="left">
                 <div className="imgContainer">
-                      <img src={ process.env.PUBLIC_URL + "/assets/image3.png" } alt="" />
+                      <img src={ process.env.PUBLIC_URL + "/assets/imageWbg.jpg" } alt="" />
                       
                    
                 </div>
@@ -32,7 +32,7 @@ export default function Intro() {
                    <h3>Web Developer<span ref={ textRef }> Front-End engineer</span></h3>
                </div>
                <a href="#portfolio">
-                   <img className="arrow" src={ process.env.PUBLIC_URL + "/assets/down_arrw.png" } alt=""/>
+                   <img className="arrow" src={ process.env.PUBLIC_URL + "/assets/arrow-vector.png" } alt=""/>
                </a>
            </div>
         </div>

@@ -9,7 +9,7 @@ export default function Works() {
     const data = [
         {
             id: 1,
-            icon: "https://clipartart.com/images/smartphone-clipart-black-and-white-9.jpg",
+            icon: process.env.PUBLIC_URL + "/assets/iphone-clipart.png",
             title: "Social Media App",
             desc:
                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, qui.",
